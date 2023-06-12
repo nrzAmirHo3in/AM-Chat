@@ -1,2 +1,2 @@
 # AM-Chat
-Ambitious Magician Chat
+## Ambitious Magician Chat
