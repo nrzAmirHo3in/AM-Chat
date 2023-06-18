@@ -4,3 +4,7 @@ According to the license of this program, you are allowed to use the sources of 
 ## [Version 0.8 Beta](https://raw.githubusercontent.com/nrzAmirHo3in/AM-Chat/main/v0.8/apk/AM-Chat-V0.8.apk):
 - Fix some bugs
 - Add check for update
+## [Version 0.9 Beta](https://raw.githubusercontent.com/nrzAmirHo3in/AM-Chat/main/v0.9/apk/AM-Chat-V0.9.apk):
+- Fix some bugs
+- Add Chat-GPT
+- Add reply option
