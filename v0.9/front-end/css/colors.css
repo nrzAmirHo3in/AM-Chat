@@ -1,0 +1,22 @@
+:root {
+    --background-color: #fff;
+    --text-color: #20232b;
+    --input-text-color: #20232b;
+    --white-dark: #d9d9d9;
+    --white-light: #fff;
+    --green-light: #26de81;
+    --green-dark: #24ab66;
+    --red: #eb3b5a;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background-color: #20232b;
+        --text-color: #fff;
+        --input-text-color: #20232b;
+        --white-dark: #d9d9d9;
+        --green-light: #26de81;
+        --green-dark: #24ab66;
+        --red: #eb3b5a;
+    }
+}

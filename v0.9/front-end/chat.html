@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport"
+            content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+        <meta name="color-scheme" content="light only">
+        <link rel="stylesheet" href="css/chat.css">
+        <title>AM Chat</title>
+    </head>
+<body id="body">
+    <img src="svg/pattern.svg" alt="">
+    <header>
+        <img id="user-profile" src="svg/loading.svg" alt="">
+        <h2 id="user-name"></h2>
+        <h4 id="user-status"></h4>
+        <svg onclick="location.replace('chats.html');" width="60px" height="60px" viewBox="0 0 24.00 24.00" xmlns="http://www.w3.org/2000/svg">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC"
+                stroke-width="0.048"></g>
+            <g id="SVGRepo_iconCarrier">
+                <g id="Complete">
+                    <g id="arrow-left">
+                        <g>
+                            <polyline data-name="Right" fill="none" id="Right-2" points="7.6 7 2.5 12 7.6 17"
+                                stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></polyline>
+                            <line fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="21.5"
+                                x2="4.8" y1="12" y2="12"></line>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </svg>
+    </header>
+
+    <div id="chatbox">
+
+    </div>
+    <div id="message">
+        <div id="replay">
+            <img src="svg/x-10329.svg" alt="" id="closeReplay">
+            <span></span>
+            <h3 id="replyTo"></h3>
+            <p id="replyText"></p>
+        </div>
+        <input type="text" id="msg" class="input" placeholder="پیام شما برای دوست عزیز..." autocomplete="off">
+        <svg width="66" id="send" height="66" viewBox="0 0 66 66" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M55 11L35.75 57.75L27.5 38.5M55 11L33 20.0588M55 11L27.5 38.5M27.5 38.5L8.25 30.25L19.25 25.7206" stroke="black" stroke-width="4.8" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+    </div>
+    <script src="js/jquery-3.6.4.min.js"></script>
+    <script src="js/chat-page.js"></script>
+</body>
+</html>
