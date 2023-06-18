@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta name="color-scheme" content="light only">
+    <link rel="stylesheet" href="css/profile.css">
+    <title>AM Chat</title>
+</head>
+
+<body id="body">
+    <header>
+        <svg width="60px" height="60px" viewBox="0 0 24.00 24.00" xmlns="http://www.w3.org/2000/svg">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC"
+                stroke-width="0.048"></g>
+            <g id="SVGRepo_iconCarrier">
+                <title></title>
+                <g id="Complete">
+                    <g id="arrow-left">
+                        <g>
+                            <polyline data-name="Right" fill="none" id="Right-2" points="7.6 7 2.5 12 7.6 17"
+                                stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></polyline>
+                            <line fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="21.5"
+                                x2="4.8" y1="12" y2="12"></line>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </svg>
+        <h1 id="h1">Profile</h1>
+    </header>
+    <form method="post" id="upload" enctype="multipart/form-data">
+        <input type="file" id="selectProfileInput">
+    </form>
+    <div class="profile" id="changeProfile">
+        <img src="" alt="" id="profile-photo">
+        <span>
+            <img src="svg/upload.svg" alt="">
+        </span>
+    </div>
+    <div id="checkUpdate">
+        <div class="back"></div>
+        <div class="input" id="newUpdata">
+            <img src="svg/loading.svg" alt="">
+        </div>
+    </div>
+    <div class="edit-name">
+        <div class="back"></div>
+        <input id="input-user-name" type="text" class="input" value="" autocomplete="off">
+        <button id="editBtn1" class="button">Edit</button>
+    </div>
+    <div class="edit-bio">
+        <div class="back"></div>
+        <input id="input-user-bio" type="text" class="input" value="" autocomplete="off">
+        <button id="editBtn3" class="button">Edit</button>
+    </div>
+    <div class="edit-lan">
+        <div class="back"></div>
+        <div class="fa">
+            <p>فارسی</p>
+            <img id="fa-img" src="svg/check.svg" alt="">
+        </div>
+        <div class="en">
+            <p>English</p>
+            <img id="en-img" src="svg/check.svg" alt="">
+        </div>
+    </div>
+    <div class="options">
+        <div class="option" id="name">
+            <p id="pname">Display Name:</p>
+            <p id="p-user-name"></p>
+        </div>
+        <div class="option" id="email">
+            <p id="pemail">Email:</p>
+            <p id="p-user-email"></p>
+        </div>
+        <div class="option" id="lang">
+            <p>Language / زبان :</p>
+            <p id="lan">English</p>
+        </div>
+        <div class="option" id="bio">
+            <p id="pbio">Biography:</p>
+            <p id="p-user-bio"></p>
+        </div>
+        <div class="option" id="version">
+            <p id="pversion">Version:</p>
+            <p id="versionNum">0.8</p>
+        </div>
+    </div>
+    <script src="js/jquery-3.6.4.min.js"></script>
+    <script src="js/settings-page.js"></script>
+</body>
+
+</html>

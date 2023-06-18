@@ -1,0 +1,176 @@
+@import url(colors.css);
+@import url(font.css);
+@import url(all.css);
+
+*{
+    font-family: "Itim","koodak";
+}
+
+body{
+    background-color: #20232b;
+    height: 100vh;
+    overflow: hidden;
+}
+body > img:first-child {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    z-index: -1;
+    position: absolute;
+}
+
+@media (prefers-color-scheme: light){
+    body > img:first-child {
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.2);
+        z-index: -1;
+        position: absolute;
+    }
+    header svg *{
+        fill: var(--text-color);
+        stroke: var(--text-color);
+    }
+}
+
+header{
+    background-color: var(--background-color);
+    border-bottom-left-radius: 32px;
+    border-bottom-right-radius: 32px;
+    display: grid;
+    grid-template-areas: "svg svg h1 h1 img img"
+    "svg svg h3 h3 img img";
+    text-align: center;
+    position: relative;
+    height: 75px;
+}
+
+header img{
+    grid-area: img;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    border: 5px solid var(--green-dark);
+    margin-top: 5px;
+    position: absolute;
+    right: 20px;
+}
+
+header svg{
+    stroke: var(--text-color);
+    width: 25px;
+    grid-area: svg;
+    margin-left: 30px;
+    margin-top: 8px;
+}
+
+header h2{
+    color: var(--text-color);
+    grid-area: h1;
+    margin-top: 10px;
+    margin-right: 60px;
+}
+
+header h4{
+    color: var(--text-color);
+    grid-area: h3;
+    margin-right: 60px;
+}
+
+#message {
+    position: absolute;
+    bottom: 0;
+    padding: 10px 30px;
+    width: 100%;
+    display: grid;
+    grid-template-areas: "input input input input input input input input input input input input input input input input input input svg";
+    gap: 10px;
+    align-items: center;
+}
+
+#message input{
+    width: 100%;
+    height: 40px;
+    border-radius: 16px;
+    border: 0;
+    outline: 0;
+    background-color: var(--white-dark);
+    padding: 10px 20px;
+    grid-area: input;
+    direction: rtl;
+}
+
+#message svg{
+    width: 40px;
+    height: 40px;
+    grid-area: svg;
+    background-color: var(--white-dark);
+    border-radius: 50%;
+    padding: 8px;
+    transition: 0.2s;
+}
+
+#chatbox{
+    height: 100%;
+    padding: 0 20px;
+    overflow-y: scroll;
+    height: calc(100vh - 130px);
+}
+
+#chatbox::-webkit-scrollbar{
+    display: none;
+}
+
+#chatbox .send{
+    max-width: 75%;
+    min-width: 60px;
+    width: fit-content;
+    margin: 10px 0;
+    margin-left: auto;
+    background-color: #eaffe2;
+    text-align: right;
+    padding: 10px 20px;
+    border-radius: 16px;
+    direction: rtl;
+}
+
+#chatbox .send svg{
+    display: inline-block;
+    margin-bottom: -4px;
+    width: 15px;
+    height: 15px;
+}
+
+#chatbox .send > p{
+    overflow-wrap: break-word;
+}
+
+#chatbox .receive > p{
+    overflow-wrap: break-word;
+}
+
+#chatbox .send > p:last-of-type{
+    font-size: 8pt;
+    opacity: 0.6;
+    display: inline-block;
+}
+
+#chatbox .send svg{
+    width: 20px;
+}
+
+#chatbox .receive{
+    max-width: 75%;
+    min-width: 60px;
+    width: fit-content;
+    margin: 10px 0;
+    margin-right: auto;
+    background-color: #e2fffe;
+    text-align: right;
+    padding: 10px 20px;
+    border-radius: 16px;
+    direction: rtl;
+}
+
+#chatbox .receive > p:last-of-type{
+    font-size: 8pt;
+    opacity: 0.6;
+}

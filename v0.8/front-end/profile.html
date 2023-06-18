@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta name="color-scheme" content="light only">
+    <link rel="stylesheet" href="css/profile.css">
+    <title>AM Chat</title>
+</head>
+
+<body id="body">
+    <div class="confirm">
+        <div class="back"></div>
+        <div class="input" value="">
+            <h2 id="rusure">Are you sure?</h2>
+        </div>
+        <button id="confirmBtn" class="button">Delete</button>
+    </div>
+    <header>
+        <svg onclick="back()" width="60px" height="60px" viewBox="0 0 24.00 24.00" xmlns="http://www.w3.org/2000/svg">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC"
+                stroke-width="0.048"></g>
+            <g id="SVGRepo_iconCarrier">
+                <title></title>
+                <g id="Complete">
+                    <g id="arrow-left">
+                        <g>
+                            <polyline data-name="Right" fill="none" id="Right-2" points="7.6 7 2.5 12 7.6 17"
+                                stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></polyline>
+                            <line fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="21.5"
+                                x2="4.8" y1="12" y2="12"></line>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </svg>
+        <h1 id="h1">Profile</h1>
+    </header>
+    <input type="file" id="selectProfileInput">
+    <div class="profile" id="changeProfile">
+        <img id="user-profile" src="svg/loading.svg" alt="">
+    </div>
+    <div class="options">
+        <div class="option">
+            <p id="pname">Diaplay Name:</p>
+            <p id="user-name"></p>
+        </div>
+        <div class="option">
+            <p id="pemail">Email:</p>
+            <p id="user-email"></p>
+        </div>
+        <div class="option" id="bio">
+            <p id="pbio">Biography:</p>
+            <p id="user-bio"></p>
+        </div>
+        <div class="option" id="delete">
+            <p id="deleteContact">Delete this contact</p>
+            <svg id="deleteSvg" width="74" height="74" viewBox="0 0 74 74" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M56.3311 72.4607H17.6689C13.0223 72.4607 9.25 68.6812 9.25 64.0417V12.3357H64.75V64.0417C64.75 68.6812 60.9705 72.4607 56.3311 72.4607ZM15.4143 18.5V64.0345C15.4143 65.2775 16.426 66.2892 17.6689 66.2892H56.3238C57.5668 66.2892 58.5785 65.2775 58.5785 64.0345V18.5H15.4143Z" fill="#EB3B5A"/>
+                <path d="M66.2893 18.5001H7.71074C6.00527 18.5001 4.625 17.1198 4.625 15.4144C4.625 13.7089 6.00527 12.3286 7.71074 12.3286H66.2965C68.002 12.3286 69.3822 13.7089 69.3822 15.4144C69.3822 17.1198 67.9947 18.5001 66.2893 18.5001ZM44.7107 9.2501H29.2893C27.5838 9.2501 26.2035 7.86982 26.2035 6.16436C26.2035 4.45889 27.5838 3.07861 29.2893 3.07861H44.7035C46.409 3.07861 47.7893 4.45889 47.7893 6.16436C47.7893 7.86982 46.409 9.2501 44.7107 9.2501ZM29.2893 52.4144C27.5838 52.4144 26.2035 51.0341 26.2035 49.3286V30.8286C26.2035 29.1231 27.5838 27.7429 29.2893 27.7429C30.9947 27.7429 32.375 29.1231 32.375 30.8286V49.3286C32.375 51.0341 30.9947 52.4144 29.2893 52.4144ZM44.7107 52.4144C43.0053 52.4144 41.625 51.0341 41.625 49.3286V30.8286C41.625 29.1231 43.0053 27.7429 44.7107 27.7429C46.4162 27.7429 47.7965 29.1231 47.7965 30.8286V49.3286C47.7893 51.0341 46.409 52.4144 44.7107 52.4144Z" fill="#EB3B5A"/>
+                </svg>   
+        </div>
+    </div>
+    <script src="js/jquery-3.6.4.min.js"></script>
+    <script src="js/profile-page.js"></script>
+</body>
+
+</html>
